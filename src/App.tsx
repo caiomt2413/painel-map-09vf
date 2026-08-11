@@ -8,6 +8,59 @@ import {
 } from 'lucide-react';
 
 const initialHistoricalData = {
+  '2026-07': [
+    { 
+      id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
+      acervoTotal: 5720, acervo: 5109, acervoJef: 2409, acervoPi: 585, acervoOutros: 2115, evolucaoAcervo: 1.11,
+      entradas: 795, saidas: 695, tempo: 945, arquivados: 176,
+      sentTotal: 421, sentJef: 274, sentPi: 40, sentOutras: 74,
+      sentTipoA: 117, sentTipoC: 84, sentEdcl: 63, sentExec: 33,
+      meta1: 74.48, meta2_2011: 100.00, meta2_2022: 113.01, meta2_2023_jef: 100.00, meta3: 164.70, meta5: 108.97,
+      cvDecisao: 47, cvSentenca: 1, cvTotal: 48,
+      parados30: 523, parados60: 143, parados90: 2, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 668,
+      tempoJulgamento: 581, tempoBaixa: 595, tempoPendenteLiquido: 377, tempoPendente: 484
+    },
+    { 
+      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
+      acervoTotal: 4305, acervo: 3241, acervoJef: 1453, acervoPi: 560, acervoOutros: 1228, evolucaoAcervo: 2.67,
+      entradas: 1004, saidas: 906, tempo: 1135, arquivados: 240,
+      sentTotal: 403, sentJef: 224, sentPi: 65, sentOutras: 80,
+      sentTipoA: 250, sentTipoC: 47, sentEdcl: 38, sentExec: 34,
+      meta1: 83.79, meta2_2011: 99.93, meta2_2022: 112.80, meta2_2023_jef: 75.00, meta3: 138.58, meta5: 102.48,
+      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
+      parados30: 8, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 8
+    },
+    { 
+      id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
+      acervoTotal: 3685, acervo: 3027, acervoJef: 1435, acervoPi: 420, acervoOutros: 1172, evolucaoAcervo: 3.74,
+      entradas: 866, saidas: 761, tempo: 882, arquivados: 210,
+      sentTotal: 299, sentJef: 169, sentPi: 23, sentOutras: 20,
+      sentTipoA: 122, sentTipoC: 28, sentEdcl: 13, sentExec: 87,
+      meta1: 89.67, meta2_2011: 100.00, meta2_2022: 117.20, meta2_2023_jef: 100.00, meta3: 169.20, meta5: 126.56,
+      cvDecisao: 6, cvSentenca: 0, cvTotal: 6,
+      parados30: 202, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 202
+    },
+    { 
+      id: '25', name: '25ª Vara Federal', color: '#64748b',
+      acervoTotal: 3267, acervo: 2544, acervoJef: 1267, acervoPi: 386, acervoOutros: 891, evolucaoAcervo: 2.16,
+      entradas: 813, saidas: 780, tempo: 715, arquivados: 314,
+      sentTotal: 363, sentJef: 281, sentPi: 27, sentOutras: 29,
+      sentTipoA: 203, sentTipoC: 57, sentEdcl: 27, sentExec: 26,
+      meta1: 81.14, meta2_2011: 100.00, meta2_2022: 117.56, meta2_2023_jef: 100.00, meta3: 162.85, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
+      parados30: 63, parados60: 7, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 70
+    },
+    { 
+      id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
+      acervoTotal: 4177, acervo: 3235, acervoJef: 1456, acervoPi: 482, acervoOutros: 1297, evolucaoAcervo: 2.65,
+      entradas: 777, saidas: 760, tempo: 1188, arquivados: 312,
+      sentTotal: 279, sentJef: 198, sentPi: 22, sentOutras: 27,
+      sentTipoA: 123, sentTipoC: 33, sentEdcl: 26, sentExec: 32,
+      meta1: 74.03, meta2_2011: 100.00, meta2_2022: 115.68, meta2_2023_jef: 87.50, meta3: 254.10, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 2, cvTotal: 2,
+      parados30: 61, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 61
+    }
+  ],
   '2026-06': [
     { 
       id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
@@ -360,7 +413,7 @@ const TemposCard = ({ title, value, tooltipDesc }) => (
 
 export default function App() {
   const [dataStore, setDataStore] = useState(initialHistoricalData);
-  const [selectedMonth, setSelectedMonth] = useState('2026-06');
+  const [selectedMonth, setSelectedMonth] = useState('2026-07');
   const [selectedVaras, setSelectedVaras] = useState(['9', '12', '13', '25', '31']);
   const [viewMode, setViewMode] = useState('composicao');
   const [meta2Expanded, setMeta2Expanded] = useState(false);
