@@ -272,6 +272,59 @@ const initialHistoricalData = {
       cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
       parados30: 2, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 2
     }
+  ],
+  '2026-04': [
+    { 
+      id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
+      acervoTotal: 5693, acervo: 5232, acervoJef: 2344, acervoPi: 573, acervoOutros: 2315, evolucaoAcervo: 2.15,
+      entradas: 579, saidas: 459, tempo: 1093, arquivados: 461,
+      sentTotal: 405, sentJef: 152, sentPi: 16, sentOutras: 41,
+      sentTipoA: 101, sentTipoC: 24, sentEdcl: 11, sentExec: 196,
+      meta1: 77.76, meta2_2011: 99.93, meta2_2022: 110.15, meta2_2023_jef: 100.00, meta3: 163.91, meta5: 96.22,
+      cvDecisao: 8, cvSentenca: 27, cvTotal: 35,
+      parados30: 530, parados60: 191, parados90: 7, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 728,
+      tempoJulgamento: 598, tempoBaixa: 564, tempoPendenteLiquido: 411, tempoPendente: 541
+    },
+    { 
+      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
+      acervoTotal: 4202, acervo: 3169, acervoJef: 1318, acervoPi: 564, acervoOutros: 1287, evolucaoAcervo: -2.66,
+      entradas: 603, saidas: 651, tempo: 1291, arquivados: 1033,
+      sentTotal: 506, sentJef: 125, sentPi: 21, sentOutras: 43,
+      sentTipoA: 121, sentTipoC: 30, sentEdcl: 31, sentExec: 317,
+      meta1: 79.54, meta2_2011: 99.86, meta2_2022: 111.64, meta2_2023_jef: 66.67, meta3: 135.26, meta5: 100.00,
+      cvDecisao: 2, cvSentenca: 60, cvTotal: 62,
+      parados30: 10, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 11
+    },
+    { 
+      id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
+      acervoTotal: 3668, acervo: 3020, acervoJef: 1229, acervoPi: 419, acervoOutros: 1372, evolucaoAcervo: 3.38,
+      entradas: 599, saidas: 514, tempo: 1083, arquivados: 648,
+      sentTotal: 522, sentJef: 117, sentPi: 19, sentOutras: 17,
+      sentTipoA: 91, sentTipoC: 19, sentEdcl: 14, sentExec: 369,
+      meta1: 121.06, meta2_2011: 100.00, meta2_2022: 117.19, meta2_2023_jef: 100.00, meta3: 139.38, meta5: 100.00,
+      cvDecisao: 2, cvSentenca: 4, cvTotal: 6,
+      parados30: 164, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 165
+    },
+    { 
+      id: '25', name: '25ª Vara Federal', color: '#64748b',
+      acervoTotal: 2970, acervo: 2236, acervoJef: 1148, acervoPi: 379, acervoOutros: 709, evolucaoAcervo: -3.48,
+      entradas: 553, saidas: 718, tempo: 796, arquivados: 734,
+      sentTotal: 573, sentJef: 176, sentPi: 14, sentOutras: 68,
+      sentTipoA: 164, sentTipoC: 37, sentEdcl: 25, sentExec: 315,
+      meta1: 91.23, meta2_2011: 100.00, meta2_2022: 117.02, meta2_2023_jef: 100.00, meta3: 156.83, meta5: 100.00,
+      cvDecisao: 1, cvSentenca: 0, cvTotal: 1,
+      parados30: 88, parados60: 20, parados90: 3, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 111
+    },
+    { 
+      id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
+      acervoTotal: 4119, acervo: 3365, acervoJef: 1206, acervoPi: 489, acervoOutros: 1670, evolucaoAcervo: 2.74,
+      entradas: 585, saidas: 549, tempo: 1469, arquivados: 754,
+      sentTotal: 526, sentJef: 141, sentPi: 21, sentOutras: 31,
+      sentTipoA: 114, sentTipoC: 15, sentEdcl: 21, sentExec: 333,
+      meta1: 84.92, meta2_2011: 99.91, meta2_2022: 115.60, meta2_2023_jef: 87.50, meta3: 230.77, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
+      parados30: 276, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 277
+    }
   ]
 };
 
@@ -764,7 +817,11 @@ export default function App() {
         Saidas: v?.saidas || 0,
         Sentenças: v?.sentTotal || 0,
         'Acervo Total': v?.acervoTotal || 0,
-        'Acervo Ativo': v?.acervo || 0
+        'Acervo Ativo': v?.acervo || 0,
+        'Julgamento': v?.tempoJulgamento || 0,
+        'Baixa': v?.tempoBaixa || 0,
+        'Pendente Líquido': v?.tempoPendenteLiquido || 0,
+        'Pendente (Total)': v?.tempoPendente || 0
       };
     });
 
@@ -799,8 +856,8 @@ export default function App() {
         </div>
 
         {data9 && (
-          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-            <SectionHeader title="Métricas de Tempos (09VF)" description={`Raio-x do andamento processual de ${formatMonthName(selectedMonth)}`} icon={Clock} />
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-6">
+            <SectionHeader title="Métricas de Tempos do Mês (09VF)" description={`Raio-x do andamento processual de ${formatMonthName(selectedMonth)}`} icon={Clock} />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <TemposCard 
                 title="Tempo até o julgamento" 
@@ -825,6 +882,27 @@ export default function App() {
             </div>
           </div>
         )}
+
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+          <SectionHeader title="Histórico de Tempos Médios (09VF)" description="Evolução mensal dos indicadores de tempo em dias" icon={LineChartIcon} />
+          <div className="h-[350px] w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={chartData} margin={{ top: 20, right: 20, left: -20, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 12}} dy={10} />
+                <YAxis axisLine={false} tickLine={false} tick={{fill: '#64748b', fontSize: 12}} />
+                <RechartsTooltip content={<CustomTooltip />} cursor={{fill: '#f8fafc'}} />
+                <Legend wrapperStyle={{ paddingTop: '20px', fontSize: '13px', color: '#475569' }} />
+                
+                <Line type="monotone" dataKey="Julgamento" name="Até o Julgamento" stroke="#8b5cf6" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 7 }} />
+                <Line type="monotone" dataKey="Baixa" name="Até a Baixa" stroke="#10b981" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 7 }} />
+                <Line type="monotone" dataKey="Pendente Líquido" name="Pendente Líquido" stroke="#0ea5e9" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 7 }} />
+                <Line type="monotone" dataKey="Pendente (Total)" name="Pendente (Total)" stroke="#f59e0b" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 7 }} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
       </div>
     );
   };
