@@ -8,216 +8,110 @@ import {
 } from 'lucide-react';
 
 const initialHistoricalData = {
-  '2026-03': [
-    { 
-      id: '9', name: '9ª Vara Federal', color: '#1e3a8a', 
-      acervoTotal: 5573, acervo: 4985, acervoJef: 2265, acervoPi: 562, acervoOutros: 2158, evolucaoAcervo: 6.23, 
-      entradas: 602, saidas: 362, tempo: 1102, arquivados: 159, 
-      sentTotal: 248, sentJef: 155, sentPi: 15, sentOutras: 68, 
-      sentTipoA: 137, sentTipoC: 8, sentEdcl: 25, sentExec: 10, 
-      meta1: 81.56, meta2_2011: 99.85, meta2_2022: 109.24, meta2_2023_jef: 100.00, meta3: 172.60, meta5: 98.22, 
-      cvDecisao: 38, cvSentenca: 24, cvTotal: 62, 
-      parados30: 736, parados60: 432, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 1168,
-      tempoJulgamento: 598, tempoBaixa: 564, tempoPendenteLiquido: 411, tempoPendente: 541 
-    },
-    { 
-      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
-      acervoTotal: 4317, acervo: 3031, acervoJef: 1330, acervoPi: 562, acervoOutros: 1139, evolucaoAcervo: 2.44, 
-      entradas: 693, saidas: 649, tempo: 1324, arquivados: 210, 
-      sentTotal: 338, sentJef: 229, sentPi: 22, sentOutras: 57, 
-      sentTipoA: 194, sentTipoC: 40, sentEdcl: 36, sentExec: 30, 
-      meta1: 88.71, meta2_2011: 99.86, meta2_2022: 111.52, meta2_2023_jef: 66.67, meta3: 138.17, meta5: 100.00, 
-      cvDecisao: 1, cvSentenca: 81, cvTotal: 82, 
-      parados30: 13, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 13 
-    },
-    { 
-      id: '13', name: '13ª Vara Federal', color: '#cbd5e1', 
-      acervoTotal: 3548, acervo: 2869, acervoJef: 1151, acervoPi: 412, acervoOutros: 1306, evolucaoAcervo: 1.55, 
-      entradas: 723, saidas: 643, tempo: 1067, arquivados: 251, 
-      sentTotal: 280, sentJef: 207, sentPi: 5, sentOutras: 31, 
-      sentTipoA: 132, sentTipoC: 33, sentEdcl: 16, sentExec: 37, 
-      meta1: 142.30, meta2_2011: 100.00, meta2_2022: 116.96, meta2_2023_jef: 100.00, meta3: 129.75, meta5: 100.00, 
-      cvDecisao: 3, cvSentenca: 2, cvTotal: 5, 
-      parados30: 101, parados60: 53, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 154 
-    },
-    { 
-      id: '25', name: '25ª Vara Federal', color: '#64748b', 
-      acervoTotal: 3077, acervo: 2126, acervoJef: 1046, acervoPi: 376, acervoOutros: 704, evolucaoAcervo: 3.08, 
-      entradas: 652, saidas: 572, tempo: 924, arquivados: 260, 
-      sentTotal: 354, sentJef: 225, sentPi: 17, sentOutras: 101, 
-      sentTipoA: 234, sentTipoC: 46, sentEdcl: 24, sentExec: 11, 
-      meta1: 95.48, meta2_2011: 100.00, meta2_2022: 117.11, meta2_2023_jef: 100.00, meta3: 158.66, meta5: 100.00, 
-      cvDecisao: 0, cvSentenca: 0, cvTotal: 0, 
-      parados30: 67, parados60: 8, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 75 
-    },
-    { 
-      id: '31', name: '31ª Vara Federal', color: '#e2e8f0', 
-      acervoTotal: 4009, acervo: 3007, acervoJef: 1169, acervoPi: 481, acervoOutros: 1357, evolucaoAcervo: 4.16, 
-      entradas: 736, saidas: 595, tempo: 1529, arquivados: 246, 
-      sentTotal: 348, sentJef: 246, sentPi: 19, sentOutras: 54, 
-      sentTipoA: 204, sentTipoC: 30, sentEdcl: 34, sentExec: 29, 
-      meta1: 95.34, meta2_2011: 99.96, meta2_2022: 115.46, meta2_2023_jef: 87.50, meta3: 226.47, meta5: 100.00, 
-      cvDecisao: 0, cvSentenca: 113, cvTotal: 113, 
-      parados30: 0, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 0 
-    }
-  ],
-  '2026-04': [
+  '2026-09': [
     { 
       id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
-      acervoTotal: 5693, acervo: 5232, acervoJef: 2344, acervoPi: 573, acervoOutros: 2315, evolucaoAcervo: 2.15,
-      entradas: 579, saidas: 459, tempo: 1093, arquivados: 137,
-      sentTotal: 405, sentJef: 152, sentPi: 16, sentOutras: 41,
-      sentTipoA: 101, sentTipoC: 24, sentEdcl: 11, sentExec: 196,
-      meta1: 77.76, meta2_2011: 99.93, meta2_2022: 110.15, meta2_2023_jef: 100.00, meta3: 163.91, meta5: 96.22,
-      cvDecisao: 8, cvSentenca: 27, cvTotal: 35,
-      parados30: 530, parados60: 191, parados90: 7, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 728,
-      tempoJulgamento: 598, tempoBaixa: 564, tempoPendenteLiquido: 411, tempoPendente: 541
+      acervoTotal: 6023, acervo: 5179, acervoJef: 2526, acervoPi: 586, acervoOutros: 2067, evolucaoAcervo: 2.83,
+      entradas: 811, saidas: 685, tempo: 891, arquivados: 223,
+      sentTotal: 335, sentJef: 214, sentPi: 18, sentOutras: 26,
+      sentTipoA: 77, sentTipoC: 54, sentEdcl: 17, sentExec: 77,
+      meta1: 77.26, meta2_2011: 100.00, meta2_2022: 113.43, meta2_2023_jef: 100.00, meta3: 180.31, meta5: 113.20,
+      cvDecisao: 31, cvSentenca: 12, cvTotal: 43,
+      parados30: 579, parados60: 85, parados90: 6, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 670,
+      tempoJulgamento: 529, tempoBaixa: 594, tempoPendenteLiquido: 343, tempoPendente: 438
     },
     { 
       id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
-      acervoTotal: 4202, acervo: 3169, acervoJef: 1318, acervoPi: 564, acervoOutros: 1287, evolucaoAcervo: -2.66,
-      entradas: 603, saidas: 651, tempo: 1291, arquivados: 286,
-      sentTotal: 506, sentJef: 125, sentPi: 21, sentOutras: 43,
-      sentTipoA: 121, sentTipoC: 30, sentEdcl: 31, sentExec: 317,
-      meta1: 79.54, meta2_2011: 99.86, meta2_2022: 111.64, meta2_2023_jef: 66.67, meta3: 135.26, meta5: 100.00,
-      cvDecisao: 2, cvSentenca: 60, cvTotal: 62,
-      parados30: 10, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 11
-    },
-    { 
-      id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
-      acervoTotal: 3668, acervo: 3020, acervoJef: 1229, acervoPi: 419, acervoOutros: 1372, evolucaoAcervo: 3.38,
-      entradas: 599, saidas: 514, tempo: 1083, arquivados: 155,
-      sentTotal: 522, sentJef: 117, sentPi: 19, sentOutras: 17,
-      sentTipoA: 91, sentTipoC: 19, sentEdcl: 14, sentExec: 369,
-      meta1: 121.06, meta2_2011: 100.00, meta2_2022: 117.19, meta2_2023_jef: 100.00, meta3: 139.38, meta5: 100.00,
-      cvDecisao: 2, cvSentenca: 4, cvTotal: 6,
-      parados30: 164, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 165
-    },
-    { 
-      id: '25', name: '25ª Vara Federal', color: '#64748b',
-      acervoTotal: 2970, acervo: 2236, acervoJef: 1148, acervoPi: 379, acervoOutros: 709, evolucaoAcervo: -3.48,
-      entradas: 553, saidas: 718, tempo: 796, arquivados: 482,
-      sentTotal: 573, sentJef: 176, sentPi: 14, sentOutras: 68,
-      sentTipoA: 164, sentTipoC: 37, sentEdcl: 25, sentExec: 315,
-      meta1: 91.23, meta2_2011: 100.00, meta2_2022: 117.02, meta2_2023_jef: 100.00, meta3: 156.83, meta5: 100.00,
-      cvDecisao: 1, cvSentenca: 0, cvTotal: 1,
-      parados30: 88, parados60: 20, parados90: 3, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 111
-    },
-    { 
-      id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
-      acervoTotal: 4119, acervo: 3365, acervoJef: 1206, acervoPi: 489, acervoOutros: 1670, evolucaoAcervo: 2.74,
-      entradas: 585, saidas: 549, tempo: 1469, arquivados: 289,
-      sentTotal: 526, sentJef: 141, sentPi: 21, sentOutras: 31,
-      sentTipoA: 114, sentTipoC: 15, sentEdcl: 21, sentExec: 333,
-      meta1: 84.92, meta2_2011: 99.91, meta2_2022: 115.60, meta2_2023_jef: 87.50, meta3: 230.77, meta5: 100.00,
-      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
-      parados30: 276, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 277
-    }
-  ],
-  '2026-05': [
-    { 
-      id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
-      acervoTotal: 5806, acervo: 5367, acervoJef: 2457, acervoPi: 575, acervoOutros: 2335, evolucaoAcervo: 1.98,
-      entradas: 673, saidas: 448, tempo: 1057, arquivados: 189,
-      sentTotal: 347, sentJef: 227, sentPi: 32, sentOutras: 30,
-      sentTipoA: 105, sentTipoC: 34, sentEdcl: 33, sentExec: 58,
-      meta1: 73.96, meta2_2011: 100.00, meta2_2022: 111.12, meta2_2023_jef: 100.00, meta3: 160.31, meta5: 98.16,
-      cvDecisao: 1, cvSentenca: 27, cvTotal: 28,
-      parados30: 959, parados60: 31, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 990,
-      tempoJulgamento: 598, tempoBaixa: 564, tempoPendenteLiquido: 411, tempoPendente: 541
-    },
-    { 
-      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
-      acervoTotal: 4097, acervo: 3110, acervoJef: 1397, acervoPi: 564, acervoOutros: 1149, evolucaoAcervo: -2.50,
-      entradas: 792, saidas: 865, tempo: 1197, arquivados: 371,
-      sentTotal: 287, sentJef: 165, sentPi: 24, sentOutras: 38,
-      sentTipoA: 155, sentTipoC: 31, sentEdcl: 22, sentExec: 60,
-      meta1: 80.16, meta2_2011: 99.86, meta2_2022: 111.85, meta2_2023_jef: 66.67, meta3: 138.05, meta5: 102.82,
-      cvDecisao: 4, cvSentenca: 46, cvTotal: 50,
-      parados30: 1, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 1
-    },
-    { 
-      id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
-      acervoTotal: 3792, acervo: 3206, acervoJef: 1345, acervoPi: 419, acervoOutros: 1442, evolucaoAcervo: 3.38,
-      entradas: 712, saidas: 555, tempo: 1036, arquivados: 217,
-      sentTotal: 404, sentJef: 270, sentPi: 27, sentOutras: 0,
-      sentTipoA: 169, sentTipoC: 33, sentEdcl: 17, sentExec: 107,
-      meta1: 109.69, meta2_2011: 100.00, meta2_2022: 116.60, meta2_2023_jef: 100.00, meta3: 146.18, meta5: 116.36,
-      cvDecisao: 0, cvSentenca: 2, cvTotal: 2,
-      parados30: 95, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 96
-    },
-    { 
-      id: '25', name: '25ª Vara Federal', color: '#64748b',
-      acervoTotal: 3201, acervo: 2464, acervoJef: 1226, acervoPi: 379, acervoOutros: 859, evolucaoAcervo: 7.78,
-      entradas: 692, saidas: 451, tempo: 753, arquivados: 148,
-      sentTotal: 308, sentJef: 204, sentPi: 20, sentOutras: 51,
-      sentTipoA: 169, sentTipoC: 35, sentEdcl: 36, sentExec: 33,
-      meta1: 84.83, meta2_2011: 100.00, meta2_2022: 117.20, meta2_2023_jef: 100.00, meta3: 154.72, meta5: 100.00,
-      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
-      parados30: 20, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 20
-    },
-    { 
-      id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
-      acervoTotal: 4134, acervo: 3439, acervoJef: 1296, acervoPi: 489, acervoOutros: 1654, evolucaoAcervo: 0.36,
-      entradas: 680, saidas: 495, tempo: 1433, arquivados: 156,
-      sentTotal: 310, sentJef: 195, sentPi: 23, sentOutras: 41,
-      sentTipoA: 157, sentTipoC: 36, sentEdcl: 25, sentExec: 51,
-      meta1: 82.28, meta2_2011: 99.96, meta2_2022: 115.54, meta2_2023_jef: 87.50, meta3: 238.26, meta5: 100.00,
+      acervoTotal: 4511, acervo: 3512, acervoJef: 1638, acervoPi: 565, acervoOutros: 1309, evolucaoAcervo: 1.53,
+      entradas: 982, saidas: 900, tempo: 993, arquivados: 322,
+      sentTotal: 352, sentJef: 207, sentPi: 33, sentOutras: 59,
+      sentTipoA: 220, sentTipoC: 29, sentEdcl: 41, sentExec: 53,
+      meta1: 82.89, meta2_2011: 99.86, meta2_2022: 114.04, meta2_2023_jef: 100.00, meta3: 148.90, meta5: 100.12,
       cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
       parados30: 2, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 2
-    }
-  ],
-  '2026-06': [
-    { 
-      id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
-      acervoTotal: 5657, acervo: 5139, acervoJef: 2475, acervoPi: 577, acervoOutros: 2087, evolucaoAcervo: -2.57,
-      entradas: 644, saidas: 844, tempo: 993, arquivados: 353,
-      sentTotal: 231, sentJef: 135, sentPi: 11, sentOutras: 31,
-      sentTipoA: 69, sentTipoC: 32, sentEdcl: 3, sentExec: 54,
-      meta1: 71.61, meta2_2011: 100.00, meta2_2022: 111.51, meta2_2023_jef: 100.00, meta3: 162.95, meta5: 103.83,
-      cvDecisao: 15, cvSentenca: 11, cvTotal: 26,
-      parados30: 572, parados60: 437, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 1009,
-      tempoJulgamento: 589, tempoBaixa: 568, tempoPendenteLiquido: 391, tempoPendente: 511
-    },
-    { 
-      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
-      acervoTotal: 4193, acervo: 3188, acervoJef: 1455, acervoPi: 564, acervoOutros: 1169, evolucaoAcervo: 2.34,
-      entradas: 819, saidas: 748, tempo: 1164, arquivados: 250,
-      sentTotal: 352, sentJef: 213, sentPi: 50, sentOutras: 57,
-      sentTipoA: 249, sentTipoC: 27, sentEdcl: 25, sentExec: 32,
-      meta1: 80.10, meta2_2011: 99.86, meta2_2022: 112.71, meta2_2023_jef: 66.67, meta3: 135.51, meta5: 103.03,
-      cvDecisao: 1, cvSentenca: 0, cvTotal: 1,
-      parados30: 0, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 0
     },
     { 
       id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
-      acervoTotal: 3552, acervo: 2954, acervoJef: 1387, acervoPi: 422, acervoOutros: 1145, evolucaoAcervo: -6.33,
-      entradas: 740, saidas: 1044, tempo: 922, arquivados: 642,
-      sentTotal: 265, sentJef: 172, sentPi: 23, sentOutras: 11,
-      sentTipoA: 131, sentTipoC: 36, sentEdcl: 14, sentExec: 59,
-      meta1: 98.91, meta2_2011: 100.00, meta2_2022: 116.90, meta2_2023_jef: 100.00, meta3: 146.58, meta5: 127.79,
-      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
-      parados30: 18, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 18
+      acervoTotal: 3939, acervo: 3266, acervoJef: 1627, acervoPi: 410, acervoOutros: 1229, evolucaoAcervo: 5.15,
+      entradas: 912, saidas: 757, tempo: 913, arquivados: 282,
+      sentTotal: 366, sentJef: 240, sentPi: 12, sentOutras: 3,
+      sentTipoA: 159, sentTipoC: 36, sentEdcl: 8, sentExec: 111,
+      meta1: 84.57, meta2_2011: 100.00, meta2_2022: 117.27, meta2_2023_jef: 100.00, meta3: 186.95, meta5: 118.86,
+      cvDecisao: 17, cvSentenca: 1, cvTotal: 18,
+      parados30: 206, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 206
     },
     { 
       id: '25', name: '25ª Vara Federal', color: '#64748b',
-      acervoTotal: 3198, acervo: 2487, acervoJef: 1262, acervoPi: 392, acervoOutros: 833, evolucaoAcervo: -0.09,
-      entradas: 667, saidas: 594, tempo: 724, arquivados: 212,
-      sentTotal: 340, sentJef: 225, sentPi: 17, sentOutras: 28,
-      sentTipoA: 176, sentTipoC: 37, sentEdcl: 18, sentExec: 70,
-      meta1: 84.77, meta2_2011: 100.00, meta2_2022: 117.38, meta2_2023_jef: 100.00, meta3: 154.97, meta5: 100.00,
-      cvDecisao: 2, cvSentenca: 0, cvTotal: 2,
-      parados30: 34, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 34
+      acervoTotal: 3526, acervo: 2706, acervoJef: 1301, acervoPi: 391, acervoOutros: 1014, evolucaoAcervo: 2.95,
+      entradas: 825, saidas: 660, tempo: 700, arquivados: 264,
+      sentTotal: 368, sentJef: 242, sentPi: 22, sentOutras: 85,
+      sentTipoA: 209, sentTipoC: 48, sentEdcl: 22, sentExec: 19,
+      meta1: 81.47, meta2_2011: 100.00, meta2_2022: 117.48, meta2_2023_jef: 100.00, meta3: 176.28, meta5: 100.00,
+      cvDecisao: 1, cvSentenca: 0, cvTotal: 1,
+      parados30: 137, parados60: 39, parados90: 1, parados120: 1, parados150: 0, paradosMais150: 0, paradosTotal: 178
     },
     { 
       id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
-      acervoTotal: 4069, acervo: 3260, acervoJef: 1396, acervoPi: 481, acervoOutros: 1383, evolucaoAcervo: -1.57,
-      entradas: 726, saidas: 865, tempo: 1255, arquivados: 511,
-      sentTotal: 318, sentJef: 219, sentPi: 28, sentOutras: 39,
-      sentTipoA: 160, sentTipoC: 29, sentEdcl: 40, sentExec: 32,
-      meta1: 79.16, meta2_2011: 100.00, meta2_2022: 115.41, meta2_2023_jef: 87.50, meta3: 240.06, meta5: 100.00,
+      acervoTotal: 4362, acervo: 3533, acervoJef: 1646, acervoPi: 484, acervoOutros: 1403, evolucaoAcervo: 2.32,
+      entradas: 844, saidas: 743, tempo: 1131, arquivados: 333,
+      sentTotal: 288, sentJef: 223, sentPi: 15, sentOutras: 18,
+      sentTipoA: 124, sentTipoC: 42, sentEdcl: 9, sentExec: 32,
+      meta1: 71.23, meta2_2011: 100.00, meta2_2022: 115.81, meta2_2023_jef: 100.00, meta3: 288.58, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 4, cvTotal: 4,
+      parados30: 160, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 160
+    }
+  ],
+  '2026-08': [
+    { 
+      id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
+      acervoTotal: 5857, acervo: 5146, acervoJef: 2439, acervoPi: 585, acervoOutros: 2122, evolucaoAcervo: 2.40,
+      entradas: 790, saidas: 737, tempo: 906, arquivados: 271,
+      sentTotal: 347, sentJef: 225, sentPi: 20, sentOutras: 28,
+      sentTipoA: 113, sentTipoC: 28, sentEdcl: 22, sentExec: 74,
+      meta1: 74.52, meta2_2011: 100.00, meta2_2022: 112.69, meta2_2023_jef: 100.00, meta3: 173.28, meta5: 111.87,
+      cvDecisao: 67, cvSentenca: 0, cvTotal: 67,
+      parados30: 539, parados60: 133, parados90: 5, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 677,
+      tempoJulgamento: 561, tempoBaixa: 600, tempoPendenteLiquido: 357, tempoPendente: 454
+    },
+    { 
+      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
+      acervoTotal: 4443, acervo: 3488, acervoJef: 1492, acervoPi: 560, acervoOutros: 1436, evolucaoAcervo: 3.21,
+      entradas: 971, saidas: 880, tempo: 1068, arquivados: 264,
+      sentTotal: 371, sentJef: 218, sentPi: 33, sentOutras: 54,
+      sentTipoA: 207, sentTipoC: 40, sentEdcl: 37, sentExec: 66,
+      meta1: 83.25, meta2_2011: 99.79, meta2_2022: 113.21, meta2_2023_jef: 100.00, meta3: 144.60, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 1, cvTotal: 1,
+      parados30: 4, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 4
+    },
+    { 
+      id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
+      acervoTotal: 3746, acervo: 3087, acervoJef: 1476, acervoPi: 420, acervoOutros: 1191, evolucaoAcervo: 1.66,
+      entradas: 843, saidas: 751, tempo: 935, arquivados: 238,
+      sentTotal: 393, sentJef: 198, sentPi: 27, sentOutras: 46,
+      sentTipoA: 142, sentTipoC: 51, sentEdcl: 32, sentExec: 122,
+      meta1: 86.57, meta2_2011: 100.00, meta2_2022: 117.35, meta2_2023_jef: 100.00, meta3: 170.17, meta5: 125.04,
+      cvDecisao: 5, cvSentenca: 1, cvTotal: 6,
+      parados30: 116, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 116
+    },
+    { 
+      id: '25', name: '25ª Vara Federal', color: '#64748b',
+      acervoTotal: 3425, acervo: 2641, acervoJef: 1298, acervoPi: 386, acervoOutros: 957, evolucaoAcervo: 4.84,
+      entradas: 772, saidas: 613, tempo: 697, arquivados: 223,
+      sentTotal: 337, sentJef: 258, sentPi: 19, sentOutras: 33,
+      sentTipoA: 181, sentTipoC: 53, sentEdcl: 22, sentExec: 27,
+      meta1: 81.37, meta2_2011: 100.00, meta2_2022: 117.29, meta2_2023_jef: 100.00, meta3: 166.37, meta5: 100.00,
+      cvDecisao: 2, cvSentenca: 0, cvTotal: 2,
+      parados30: 124, parados60: 2, parados90: 1, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 127
+    },
+    { 
+      id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
+      acervoTotal: 4263, acervo: 3359, acervoJef: 1570, acervoPi: 482, acervoOutros: 1307, evolucaoAcervo: 2.06,
+      entradas: 779, saidas: 625, tempo: 1165, arquivados: 245,
+      sentTotal: 224, sentJef: 162, sentPi: 23, sentOutras: 13,
+      sentTipoA: 119, sentTipoC: 18, sentEdcl: 18, sentExec: 26,
+      meta1: 71.28, meta2_2011: 100.00, meta2_2022: 115.61, meta2_2023_jef: 87.50, meta3: 267.16, meta5: 100.00,
       cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
-      parados30: 10, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 10
+      parados30: 192, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 192
     }
   ],
   '2026-07': [
@@ -273,57 +167,110 @@ const initialHistoricalData = {
       parados30: 61, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 61
     }
   ],
-  '2026-08': [
+  '2026-06': [
     { 
       id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
-      acervoTotal: 5857, acervo: 5146, acervoJef: 2439, acervoPi: 585, acervoOutros: 2122, evolucaoAcervo: 2.40,
-      entradas: 790, saidas: 737, tempo: 906, arquivados: 271,
-      sentTotal: 347, sentJef: 225, sentPi: 20, sentOutras: 28,
-      sentTipoA: 113, sentTipoC: 28, sentEdcl: 22, sentExec: 74,
-      meta1: 74.52, meta2_2011: 100.00, meta2_2022: 112.69, meta2_2023_jef: 100.00, meta3: 173.28, meta5: 111.87,
-      cvDecisao: 67, cvSentenca: 0, cvTotal: 67,
-      parados30: 539, parados60: 133, parados90: 5, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 677,
-      tempoJulgamento: 561, tempoBaixa: 600, tempoPendenteLiquido: 357, tempoPendente: 454
+      acervoTotal: 5657, acervo: 5139, acervoJef: 2475, acervoPi: 577, acervoOutros: 2087, evolucaoAcervo: -2.57,
+      entradas: 644, saidas: 844, tempo: 993, arquivados: 353,
+      sentTotal: 231, sentJef: 135, sentPi: 11, sentOutras: 31,
+      sentTipoA: 69, sentTipoC: 32, sentEdcl: 3, sentExec: 54,
+      meta1: 71.61, meta2_2011: 100.00, meta2_2022: 111.51, meta2_2023_jef: 100.00, meta3: 162.95, meta5: 103.83,
+      cvDecisao: 15, cvSentenca: 11, cvTotal: 26,
+      parados30: 572, parados60: 437, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 1009,
+      tempoJulgamento: 589, tempoBaixa: 568, tempoPendenteLiquido: 391, tempoPendente: 511
     },
     { 
       id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
-      acervoTotal: 4443, acervo: 3488, acervoJef: 1492, acervoPi: 560, acervoOutros: 1436, evolucaoAcervo: 3.21,
-      entradas: 971, saidas: 880, tempo: 1068, arquivados: 264,
-      sentTotal: 371, sentJef: 218, sentPi: 33, sentOutras: 54,
-      sentTipoA: 207, sentTipoC: 40, sentEdcl: 37, sentExec: 66,
-      meta1: 83.25, meta2_2011: 99.79, meta2_2022: 113.21, meta2_2023_jef: 100.00, meta3: 144.60, meta5: 100.00,
-      cvDecisao: 0, cvSentenca: 1, cvTotal: 1,
-      parados30: 4, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 4
+      acervoTotal: 4193, acervo: 3188, acervoJef: 1455, acervoPi: 564, acervoOutros: 1169, evolucaoAcervo: 2.34,
+      entradas: 819, saidas: 748, tempo: 1164, arquivados: 250,
+      sentTotal: 352, sentJef: 213, sentPi: 50, sentOutras: 57,
+      sentTipoA: 249, sentTipoC: 27, sentEdcl: 25, sentExec: 32,
+      meta1: 80.10, meta2_2011: 99.86, meta2_2022: 112.71, meta2_2023_jef: 66.67, meta3: 135.51, meta5: 103.03,
+      cvDecisao: 1, cvSentenca: 0, cvTotal: 1,
+      parados30: 0, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 0
     },
     { 
       id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
-      acervoTotal: 3746, acervo: 3087, acervoJef: 1476, acervoPi: 420, acervoOutros: 1191, evolucaoAcervo: 1.66,
-      entradas: 843, saidas: 751, tempo: 935, arquivados: 238,
-      sentTotal: 393, sentJef: 198, sentPi: 27, sentOutras: 46,
-      sentTipoA: 142, sentTipoC: 51, sentEdcl: 32, sentExec: 122,
-      meta1: 86.57, meta2_2011: 100.00, meta2_2022: 117.35, meta2_2023_jef: 100.00, meta3: 170.17, meta5: 125.04,
-      cvDecisao: 5, cvSentenca: 1, cvTotal: 6,
-      parados30: 116, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 116
+      acervoTotal: 3552, acervo: 2954, acervoJef: 1387, acervoPi: 422, acervoOutros: 1145, evolucaoAcervo: -6.33,
+      entradas: 740, saidas: 1044, tempo: 922, arquivados: 642,
+      sentTotal: 265, sentJef: 172, sentPi: 23, sentOutras: 11,
+      sentTipoA: 131, sentTipoC: 36, sentEdcl: 14, sentExec: 59,
+      meta1: 98.91, meta2_2011: 100.00, meta2_2022: 116.90, meta2_2023_jef: 100.00, meta3: 146.58, meta5: 127.79,
+      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
+      parados30: 18, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 18
     },
     { 
       id: '25', name: '25ª Vara Federal', color: '#64748b',
-      acervoTotal: 3425, acervo: 2641, acervoJef: 1298, acervoPi: 386, acervoOutros: 957, evolucaoAcervo: 4.84,
-      entradas: 772, saidas: 613, tempo: 697, arquivados: 223,
-      sentTotal: 337, sentJef: 258, sentPi: 19, sentOutras: 33,
-      sentTipoA: 181, sentTipoC: 53, sentEdcl: 22, sentExec: 27,
-      meta1: 81.37, meta2_2011: 100.00, meta2_2022: 117.29, meta2_2023_jef: 100.00, meta3: 166.37, meta5: 100.00,
+      acervoTotal: 3198, acervo: 2487, acervoJef: 1262, acervoPi: 392, acervoOutros: 833, evolucaoAcervo: -0.09,
+      entradas: 667, saidas: 594, tempo: 724, arquivados: 212,
+      sentTotal: 340, sentJef: 225, sentPi: 17, sentOutras: 28,
+      sentTipoA: 176, sentTipoC: 37, sentEdcl: 18, sentExec: 70,
+      meta1: 84.77, meta2_2011: 100.00, meta2_2022: 117.38, meta2_2023_jef: 100.00, meta3: 154.97, meta5: 100.00,
       cvDecisao: 2, cvSentenca: 0, cvTotal: 2,
-      parados30: 124, parados60: 2, parados90: 1, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 127
+      parados30: 34, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 34
     },
     { 
       id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
-      acervoTotal: 4263, acervo: 3359, acervoJef: 1570, acervoPi: 482, acervoOutros: 1307, evolucaoAcervo: 2.06,
-      entradas: 779, saidas: 625, tempo: 1165, arquivados: 245,
-      sentTotal: 224, sentJef: 162, sentPi: 23, sentOutras: 13,
-      sentTipoA: 119, sentTipoC: 18, sentEdcl: 18, sentExec: 26,
-      meta1: 71.28, meta2_2011: 100.00, meta2_2022: 115.61, meta2_2023_jef: 87.50, meta3: 267.16, meta5: 100.00,
+      acervoTotal: 4069, acervo: 3260, acervoJef: 1396, acervoPi: 481, acervoOutros: 1383, evolucaoAcervo: -1.57,
+      entradas: 726, saidas: 865, tempo: 1255, arquivados: 511,
+      sentTotal: 318, sentJef: 219, sentPi: 28, sentOutras: 39,
+      sentTipoA: 160, sentTipoC: 29, sentEdcl: 40, sentExec: 32,
+      meta1: 79.16, meta2_2011: 100.00, meta2_2022: 115.41, meta2_2023_jef: 87.50, meta3: 240.06, meta5: 100.00,
       cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
-      parados30: 192, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 192
+      parados30: 10, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 10
+    }
+  ],
+  '2026-05': [
+    { 
+      id: '9', name: '9ª Vara Federal', color: '#1e3a8a',
+      acervoTotal: 5806, acervo: 5367, acervoJef: 2457, acervoPi: 575, acervoOutros: 2335, evolucaoAcervo: 1.98,
+      entradas: 673, saidas: 448, tempo: 1057, arquivados: 189,
+      sentTotal: 347, sentJef: 227, sentPi: 32, sentOutras: 30,
+      sentTipoA: 105, sentTipoC: 34, sentEdcl: 33, sentExec: 58,
+      meta1: 73.96, meta2_2011: 100.00, meta2_2022: 111.12, meta2_2023_jef: 100.00, meta3: 160.31, meta5: 98.16,
+      cvDecisao: 1, cvSentenca: 27, cvTotal: 28,
+      parados30: 959, parados60: 31, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 990,
+      tempoJulgamento: 598, tempoBaixa: 564, tempoPendenteLiquido: 411, tempoPendente: 541
+    },
+    { 
+      id: '12', name: '12ª Vara Federal', color: '#94a3b8', 
+      acervoTotal: 4097, acervo: 3110, acervoJef: 1397, acervoPi: 564, acervoOutros: 1149, evolucaoAcervo: -2.50,
+      entradas: 792, saidas: 865, tempo: 1197, arquivados: 371,
+      sentTotal: 287, sentJef: 165, sentPi: 24, sentOutras: 38,
+      sentTipoA: 155, sentTipoC: 31, sentEdcl: 22, sentExec: 60,
+      meta1: 80.16, meta2_2011: 99.86, meta2_2022: 111.85, meta2_2023_jef: 66.67, meta3: 138.05, meta5: 102.82,
+      cvDecisao: 4, cvSentenca: 46, cvTotal: 50,
+      parados30: 1, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 1
+    },
+    { 
+      id: '13', name: '13ª Vara Federal', color: '#cbd5e1',
+      acervoTotal: 3792, acervo: 3206, acervoJef: 1345, acervoPi: 419, acervoOutros: 1442, evolucaoAcervo: 3.38,
+      entradas: 712, saidas: 555, tempo: 1036, arquivados: 217,
+      sentTotal: 404, sentJef: 270, sentPi: 27, sentOutras: 0,
+      sentTipoA: 169, sentTipoC: 33, sentEdcl: 17, sentExec: 107,
+      meta1: 109.69, meta2_2011: 100.00, meta2_2022: 116.60, meta2_2023_jef: 100.00, meta3: 146.18, meta5: 116.36,
+      cvDecisao: 0, cvSentenca: 2, cvTotal: 2,
+      parados30: 95, parados60: 1, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 96
+    },
+    { 
+      id: '25', name: '25ª Vara Federal', color: '#64748b',
+      acervoTotal: 3201, acervo: 2464, acervoJef: 1226, acervoPi: 379, acervoOutros: 859, evolucaoAcervo: 7.78,
+      entradas: 692, saidas: 451, tempo: 753, arquivados: 148,
+      sentTotal: 308, sentJef: 204, sentPi: 20, sentOutras: 51,
+      sentTipoA: 169, sentTipoC: 35, sentEdcl: 36, sentExec: 33,
+      meta1: 84.83, meta2_2011: 100.00, meta2_2022: 117.20, meta2_2023_jef: 100.00, meta3: 154.72, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
+      parados30: 20, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 20
+    },
+    { 
+      id: '31', name: '31ª Vara Federal', color: '#e2e8f0',
+      acervoTotal: 4134, acervo: 3439, acervoJef: 1296, acervoPi: 489, acervoOutros: 1654, evolucaoAcervo: 0.36,
+      entradas: 680, saidas: 495, tempo: 1433, arquivados: 156,
+      sentTotal: 310, sentJef: 195, sentPi: 23, sentOutras: 41,
+      sentTipoA: 157, sentTipoC: 36, sentEdcl: 25, sentExec: 51,
+      meta1: 82.28, meta2_2011: 99.96, meta2_2022: 115.54, meta2_2023_jef: 87.50, meta3: 238.26, meta5: 100.00,
+      cvDecisao: 0, cvSentenca: 0, cvTotal: 0,
+      parados30: 2, parados60: 0, parados90: 0, parados120: 0, parados150: 0, paradosMais150: 0, paradosTotal: 2
     }
   ]
 };
@@ -466,7 +413,7 @@ const TemposCard = ({ title, value, tooltipDesc }) => (
 
 export default function App() {
   const [dataStore, setDataStore] = useState(initialHistoricalData);
-  const [selectedMonth, setSelectedMonth] = useState('2026-08');
+  const [selectedMonth, setSelectedMonth] = useState('2026-09');
   const [selectedVaras, setSelectedVaras] = useState(['9', '12', '13', '25', '31']);
   const [viewMode, setViewMode] = useState('composicao');
   const [meta2Expanded, setMeta2Expanded] = useState(false);
@@ -558,7 +505,7 @@ export default function App() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col">
-          <SectionHeader title="Acervo em Tramitação" description="Volume de processes e composição" icon={Activity} />
+          <SectionHeader title="Acervo em Tramitação" description="Volume de processos e composição" icon={Activity} />
           <div className="flex-1 min-h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={filteredData} margin={{ top: 10, right: 10, left: -20, bottom: viewMode === 'composicao' ? 20 : 0 }}>
